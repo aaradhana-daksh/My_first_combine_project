@@ -1,0 +1,398 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("differences-robotis-ia.webp");
+    background-size: 100% 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    background-repeat: no-repeat;
+    scrollbar-width: none;
+    
+    
+
+}
+a{
+    text-decoration: none;
+}
+.bgtext{
+    font-size: 10vw;
+    text-align: center;
+    color:rgba(248, 151, 6, 0.543);
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10%;
+    border-bottom: 1cap;
+}
+
+    h1 > span{ 
+        position: relative;
+        display: inline-block;
+        color: rgba(255, 0, 93, 0.694);
+        height: 1.25em;
+        vertical-align: bottom;
+        overflow: hidden;
+      }
+      
+      h1 > span > span {
+        display: block;
+        animation: animateWords 10s infinite ease;
+      }
+      @keyframes animateWords {
+        0% { transform: translateY(0%);}
+        250% { transform: translateY(-100%);}
+        50% { transform: translateY(-200%);}
+        750% { transform: translateY(-300%);}
+        100% { transform: translateY(-400%);}
+      }
+
+
+
+.select-box{
+    width: 200px;
+   position: fixed;
+    top: 0%;
+    right: 60px;
+
+}
+
+
+
+.option:hover{
+    background-color: rgba(240, 248, 255, 0.824);
+    letter-spacing: 1px;
+}
+
+.active-options{
+    display: flex;
+}
+.rotate{
+    transform: rotate(180deg);
+    
+}
+
+.option{
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.4s;
+    padding: 10px;
+    cursor: pointer;
+}
+.option:hover{
+    background-color: rgba(240, 248, 255, 0.774);
+    letter-spacing: 1px;
+}
+.select-heading{
+    background-color: rgba(240, 248, 255, 0.546);
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.right-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+
+}
+
+.select-heading img{
+    transition: all o.3s;
+}
+
+
+
+.options{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5px) ;
+    background-color: rgba(240, 248, 255, 0.429);
+    text-align: center;
+    margin-top: 20px;
+
+    font-size: 20px;
+    border-radius: 20px;
+    display: none;
+
+    
+
+}
+
+
+
+
+.options a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#chatbotimg{
+    cursor: pointer;
+}
+
+
+
+
+.h1{
+    font-size: 5vw;
+    text-align: center;
+    color: white;
+    border-radius: 10%;
+    border-bottom: 1cap;
+    border-color: antiquewhite;
+
+}
+.logo{
+    font-size: 10vw;
+    text-align: center;
+    color: rgba(251, 240, 255, 0.608);
+}
+.pass{
+    font-size: 2vw;
+    text-align: right;
+    color: rgba(251, 240, 255, 0.608);
+    display: flex;
+}
+.QR{
+    font-size: 2vw;
+    text-align: right;
+    color: rgba(251, 240, 255, 0.63);
+    display: flex;
+}
+
+nav{     
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    z-index: 20;
+}
+
+
+main{
+    width: 100%;
+    height: calc(100% - 80px);
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.chat-box{
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    bottom: 10%;
+    right:5%;
+    background-color: rgba(240, 248, 255, 0.457);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    transform: translateX(600px);
+    transition: all 0.5s;
+    z-index: 25;
+    }
+.active-chat-box{
+    transform: translateX(0px);
+
+}
+
+.chat-container{
+    width: 100%;
+    height: 80%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    font-size: 20px;
+}
+
+
+.input-area{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    position: fixed;
+    bottom: 0;
+}
+
+.prompt{
+    width: 60%;
+    padding: 10px;
+    background: black;
+    color: white;
+    font-size: 19px;
+    border-radius: 20px;
+    outline: none;
+
+}
+.input-area button{
+    padding: 10px;
+    background: black;
+    border: none;
+    border-radius: 50px;
+}
+.input-area{
+    width: 70%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    position: fixed;
+    bottom: 0;
+}
+.user-chat-box{
+    width: 80%;
+    padding: 8px;
+    background-color: black;
+    border-radius: 50px 0px 50px 50px;
+    position: relative;
+    left: 70px;
+    color: white;
+}
+
+.ai-chat-box{
+    width: 80%;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.396);
+    border-radius: 0px 50px 50px 50px;
+    position: relative;
+    left: 0px;
+    color: white;
+}    
+
+
+.right-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+
+}
+.options{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5px) ;
+    background-color: rgba(240, 248, 255, 0.429);
+    text-align: center;
+    margin-top: 20px;
+
+    font-size: 20px;
+    border-radius: 20px;
+    display: none;
+
+    
+
+}
+.select-heading{
+    background-color: aliceblue;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.select-heading img{
+    transition: all o.3s;
+}
+
+
+
+
+
+.active-options{
+    display: flex;
+}
+.rotate{
+    transform: rotate(180deg);
+    
+}
+
+.option{
+    color: black;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.4s;
+    padding: 10px;
+    cursor: pointer;
+}
+.option:hover{
+    background-color: aliceblue;
+    letter-spacing: 1px;
+}
+
+#chatbotimg{
+    cursor: pointer;
+}
+
+.options a{
+    text-decoration: none;
+    color: black;
+}
+
+.svgs{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: absolute;
+    border-radius: 20px;
+    gap:10px;
+    right:10%;
+    bottom: 20%;
+    background-color: rgba(255, 255, 255, 0.603);
+    backdrop-filter: blur(5px);
+    
+    }
+
+    .svgs::-webkit-scrollbar{
+        width: 0px;
+    }
+    .svgs img{
+        width: 300px;
+    }
+
+.bgall{
+    
+        width: 80%;
+        border-radius: 50px;
+        position: relative;
+
+        
+        background-color: rgba(255, 228, 196, 0.655);
+        align-items: center;
+        color: aliceblue;
+    
+
+}
